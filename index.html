@@ -1,23 +1,340 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Gaia-s-Grove</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
 
-        <link rel="import" href="components/header/header.html">
-    </head>
-    <body>
-         <!-- Importar el componente de botón -->
-    <!-- <include src="components/header/header.html"></include> -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>navbar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- Importar el componente de tarjeta -->
-    <div id="card-container"></div>
-     
-        <script src="js/script.js" async defer></script>
-    </body>
+<body>
+    <nav class="header">
+        <div class="header-content">
+            <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+            <label class="btn-menu" for="menu">
+                <img src="assets/icons/Rounded/Navigation/menu.svg" alt="menu" />
+            </label>
+
+
+            <!-- <div class="menu-btn">
+					<label for="btn-menu">☰</label>
+				</div> -->
+            <div class="logo">
+                <!-- <span>Logo</span> -->
+                <img src="assets/icons/icon.ico" alt="icono" width="35px" height="35px">
+                <h1>Gaia's Grove</h1>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Login</a></li>
+                
+                <li>
+                    <input type="checkbox" id="search" name="search" class="menu-search">
+                    <label class="btn-search-div" for="menu">
+                        <a href="#"><img src="assets/icons/Rounded/Action/search.svg" alt="buscar"></a>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+        <div class="search"></div>
+        <!-- ---------------- -->
+
+        <!-- <input type="checkbox" id="btn-menu"> -->
+        <div class="side-menu glass-effect">
+            <label class="btn-menu" for="menu">
+                <img src="assets/icons/Rounded/Navigation/close.svg" alt="cerrar" />
+            </label>
+            <div class="side-menu-content">
+                <ul>
+                    <li><a href="#" class="active">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#">Opción 2</a>
+                        <ul class="submenu">
+                            <li><a href="#">Subopción 1</a></li>
+                            <li><a href="#">Subopción 2</a></li>
+                            <li><a href="#">Subopción 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                </ul>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+        <div class="side-searh">
+            <div class="header-search">
+                <label class="btn-menu" for="menu">
+                    <img src="assets/icons/Rounded/Navigation/arrow_back.svg" alt="cerrar" />
+                </label>
+                <input type="text" class="input-search" />
+                <label class="btn-menu" for="menu">
+                    <img src="assets/icons/Rounded/Action/search.svg" alt="cerrar" />
+                </label>
+            </div>
+            <div class="side-searh-content">
+                <div class="card-searh">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
+            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
+            architecto? Voluptas.</p>
+    </div>
+
+    <!-- 		
+		<script>
+			//------------- ESTO ES PARA QUE SE OCULTE EL MENU ----------------
+			// Obtener referencias a los elementos del DOM
+			const menuCheckbox = document.querySelector('.menu-checkbox');
+			const sideMenu = document.querySelector('.side-menu');
+			const overlay = document.querySelector('.overlay');
+
+			// Agregar un event listener al cambio de estado del checkbox
+			menuCheckbox.addEventListener('change', function() {
+			  if (this.checked) {
+				// Mostrar el side-menu
+				sideMenu.style.transform = 'translateX(0)';
+				overlay.style.display = 'block'; // Mostrar el overlay
+			} else {
+				// Ocultar el side-menu
+				sideMenu.style.transform = 'translateX(-100%)';
+				overlay.style.display = 'none'; // Mostrar el overlay
+			  }
+			});
+			// -----------------------------------------------------------------
+
+            
+		  </script> -->
+    <script>
+        // Obtener referencias a los elementos del DOM
+        const menuCheckbox = document.querySelector('.menu-checkbox');
+        const sideMenu = document.querySelector('.side-menu');
+        const overlay = document.querySelector('.overlay');
+
+        // Agregar un event listener al cambio de estado del checkbox
+        menuCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Mostrar el side-menu
+                sideMenu.style.transform = 'translateX(0)';
+                overlay.style.display = 'block'; // Mostrar el overlay
+                document.body.style.overflow = 'hidden'; // Bloquear desplazamiento de la página
+            } else {
+                // Ocultar el side-menu
+                sideMenu.style.transform = 'translateX(-100%)';
+                overlay.style.display = 'none'; // Mostrar el overlay
+                document.body.style.overflow = 'auto'; // Restaurar desplazamiento de la página
+            }
+        });
+
+
+
+
+        // SUBMENU EN EL SIDE
+        // Obtener todos los elementos con la clase 'has-submenu'
+        const submenuItems = document.querySelectorAll('.has-submenu');
+
+        // Agregar un event listener a cada elemento
+        submenuItems.forEach(item => {
+            // Obtener el submenu asociado a cada elemento
+            const submenu = item.querySelector('.submenu');
+
+            // Agregar un event listener al clic
+            item.addEventListener('click', () => {
+                // Toggle de la clase 'submenu-visible' para mostrar u ocultar el submenu
+                submenu.classList.toggle('submenu-visible');
+            });
+
+            // Agregar un event listener a las opciones del submenu
+            const submenuOptions = submenu.querySelectorAll('li');
+            submenuOptions.forEach(option => {
+                option.addEventListener('click', () => {
+                    // Remover la clase 'active' de todas las opciones del submenu
+                    submenuOptions.forEach(opt => opt.classList.remove('active'));
+                    // Agregar la clase 'active' a la opción seleccionada
+                    option.classList.add('active');
+                });
+            });
+        });
+
+// ESTO ES PARA EL SUBMENU PERO MAS PRO
+// // Obtener todos los elementos con la clase 'has-submenu'
+// const submenuItems = document.querySelectorAll('.has-submenu');
+
+// // Agregar un event listener a cada elemento
+// submenuItems.forEach(item => {
+//   // Obtener el submenu asociado a cada elemento
+//   const submenu = item.querySelector('.submenu');
+
+//   // Agregar un event listener al clic en el elemento principal
+//   item.addEventListener('click', () => {
+//     // Toggle de la clase 'submenu-visible' para mostrar u ocultar el submenu
+//     submenu.classList.toggle('submenu-visible');
+//   });
+
+//   // Obtener todas las opciones del submenu
+//   const submenuOptions = submenu.querySelectorAll('li');
+//   submenuOptions.forEach(option => {
+//     option.addEventListener('click', (event) => {
+//       // Evitar que el evento de clic se propague al elemento principal
+//       event.stopPropagation();
+//       // Remover la clase 'active' de todas las opciones del submenu
+//       submenuOptions.forEach(opt => opt.classList.remove('active'));
+//       // Agregar la clase 'active' a la opción seleccionada
+//       option.classList.add('active');
+//     });
+//   });
+// });
+
+// // Agregar un event listener para cerrar el submenu al hacer clic en cualquier parte del documento
+// document.addEventListener('click', (event) => {
+//   // Verificar si el clic se realizó fuera de los submenus
+//   const isOutsideSubmenu = !event.target.closest('.has-submenu');
+//   if (isOutsideSubmenu) {
+//     // Ocultar todos los submenus
+//     submenuItems.forEach(item => {
+//       const submenu = item.querySelector('.submenu');
+//       submenu.classList.remove('submenu-visible');
+//     });
+//   }
+// });
+
+
+    </script>
+    <script src="" async defer></script>
+</body>
+
 </html>
