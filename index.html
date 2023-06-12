@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>navbar</title>
+    <title>Gaia's Grove</title>
+    <link rel="shortcut icon" href="assets/icons/icon.ico">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
 </head>
 
 <body>
@@ -22,29 +21,61 @@
                 <img src="assets/icons/Rounded/Navigation/menu.svg" alt="menu" />
             </label>
 
-
-            <!-- <div class="menu-btn">
-					<label for="btn-menu">☰</label>
-				</div> -->
-            <div class="logo">
+            <div class="logo drop-shadow">
                 <!-- <span>Logo</span> -->
                 <img src="assets/icons/icon.ico" alt="icono" width="35px" height="35px">
                 <h1>Gaia's Grove</h1>
             </div>
             <ul class="main-menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Login</a></li>
-                
                 <li>
-                    <input type="checkbox" id="search" name="search" class="menu-search">
-                    <label class="btn-search-div" for="menu">
-                        <a href="#"><img src="assets/icons/Rounded/Action/search.svg" alt="buscar"></a>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Inicio</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn">
+                        <label for="icon-opcion" class="">
+                            <!-- <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" /> -->
+                        </label>
+                        Iniciar sesión
+                    </a>
+                </li>
+                <li>
+                    <input type="checkbox" id="div-search" name="div-search" class="menu-search">
+                    <label class="btn-search-togle" for="div-search">
+                        <img src="assets/icons/Rounded/Action/search.svg" alt="buscar">
                     </label>
                 </li>
             </ul>
+
         </div>
         <div class="overlay"></div>
         <div class="search"></div>
@@ -80,261 +111,410 @@
             </div>
         </div>
 
-        <div class="side-searh">
+        <div class="side-search">
             <div class="header-search">
-                <label class="btn-menu" for="menu">
+
+                <label class="btn-back" for="div-search">
                     <img src="assets/icons/Rounded/Navigation/arrow_back.svg" alt="cerrar" />
                 </label>
-                <input type="text" class="input-search" />
-                <label class="btn-menu" for="menu">
+
+                <input type="text" class="input-search" id="search-input" oninput="toggleClearButton()" />
+                <button class="btn-clear" id="clear-button" onclick="clearSearch()">
+                    <img src="assets/icons/Rounded/Navigation/close.svg" width="11px" height="11px" alt="clear-btn">
+                </button>
+
+                <label class="btn-search" for="menu">
                     <img src="assets/icons/Rounded/Action/search.svg" alt="cerrar" />
                 </label>
             </div>
-            <div class="side-searh-content">
-                <div class="card-searh">
+            <div class="side-search-content">
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div class="">
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
 
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div class="">
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fuga voluptates nostrum officiis, error ipsa
-            repudiandae quo autem perspiciatis adipisci. Cumque suscipit quisquam aliquam aut quibusdam amet mollitia
-            architecto? Voluptas.</p>
+
+
+
+    <div class="head">
+        <!-- <img src="paisaje.jpg" alt="plntas"> -->
+        <h2>Gaia's Grove</h2>
+        <form onsubmit="" role="search">
+            <button type="submit" class="">
+                <img src="assets/icons/Rounded/Action/search.svg" alt="icon" />
+            </button>
+            <input id="search" type="search" placeholder="Buscar..." autofocus required />
+        </form>
+    </div>
+    <div class="categorias">
+        <h1>categorias</h1>
+        <ul class="category-cards">
+          <li class="category-card-item" title="Información adicional">
+            <div class="category-card">
+              <div class="category-card-content">
+                <div>
+                    <h2 class="category-card-title">Categoría 1</h2>
+                    <p class="category-card-text">Descripción de la categoría 1.</p>
+                </div>
+                
+                <div class="category-card-image">
+                  <img src="assets/icons/icon.ico" alt="Imagen de la categoría" class="category-image-float-right">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="category-card-item" title="Información adicional">
+            <div class="category-card">
+                <div class="category-card-content">
+                    <div>
+                        <h2 class="category-card-title">Categoría 2</h2>
+                        <p class="category-card-text">Descripción de la categoría 2.</p>
+                    </div>
+                    
+                    <div class="category-card-image">
+                      <img src="assets/icons/icon.ico" alt="Imagen de la categoría" class="category-image-float-right">
+                    </div>
+                  </div>
+            </div>
+          </li>
+          <li class="category-card-item" title="Información adicional">
+            <div class="category-card">
+                <div class="category-card-content">
+                    <div>
+                        <h2 class="category-card-title">Categoría 3</h2>
+                        <p class="category-card-text">Descripción de la categoría 3.</p>
+                    </div>
+                    
+                    <div class="category-card-image">
+                      <img src="assets/icons/icon.ico" alt="Imagen de la categoría" class="category-image-float-right">
+                    </div>
+                  </div>
+            </div>
+          </li>
+          <li class="category-card-item" title="Información adicional">
+            <div class="category-card">
+                <div class="category-card-content">
+                    <div>
+                        <h2 class="category-card-title">Categoría 4</h2>
+                        <p class="category-card-text">Descripción de la categoría 4.</p>
+                    </div>
+                    
+                    <div class="category-card-image">
+                      <img src="assets/icons/icon.ico" alt="Imagen de la categoría" class="category-image-float-right">
+                    </div>
+                  </div>
+            </div>
+          </li>
+          <li class="category-card-item" title="Información adicional">
+            <div class="category-card">
+                <div class="category-card-content">
+                    <div>
+                        <h2 class="category-card-title">Categoría 5</h2>
+                        <p class="category-card-text">Descripción de la categoría 5.</p>
+                    </div>
+                    
+                    <div class="category-card-image">
+                      <img src="assets/icons/icon.ico" alt="Imagen de la categoría" class="category-image-float-right">
+                    </div>
+                  </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    <div class="grid-cards">
+        <h1>Ofertas Especiales</h1>
+        <ul class="cards">
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla6.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 1</h2>
+                        <p class="card_text">Descripción de la planta 1.</p>
+                        <p class="card_price">$9.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla5.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 2</h2>
+                        <p class="card_text">Descripción de la planta 2.</p>
+                        <p class="card_price">$12.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla4.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 3</h2>
+                        <p class="card_text">Descripción de la planta 3.</p>
+                        <p class="card_price">$7.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla1.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 4</h2>
+                        <p class="card_text">Descripción de la planta 4.</p>
+                        <p class="card_price">$14.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla2.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 5</h2>
+                        <p class="card_text">Descripción de la planta 5.</p>
+                        <p class="card_price">$7.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item" title="Información adicional">
+                <div class="card">
+                    <div class="card_image"><img src="assets/image/pla3.jpeg"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Planta 6</h2>
+                        <p class="card_text">Descripción de la planta 6.</p>
+                        <p class="card_price">$7.99</p>
+                        <div class="card_actions">
+                            <button class="btn2 card_btn"><img src="assets/icons/Rounded/Maps/local_grocery_store.svg"
+                                    alt="icon" /> Añadir al carrito</button>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Agrega más tarjetas de plantas aquí -->
+        </ul>
+
     </div>
 
-    <!-- 		
-		<script>
-			//------------- ESTO ES PARA QUE SE OCULTE EL MENU ----------------
-			// Obtener referencias a los elementos del DOM
-			const menuCheckbox = document.querySelector('.menu-checkbox');
-			const sideMenu = document.querySelector('.side-menu');
-			const overlay = document.querySelector('.overlay');
-
-			// Agregar un event listener al cambio de estado del checkbox
-			menuCheckbox.addEventListener('change', function() {
-			  if (this.checked) {
-				// Mostrar el side-menu
-				sideMenu.style.transform = 'translateX(0)';
-				overlay.style.display = 'block'; // Mostrar el overlay
-			} else {
-				// Ocultar el side-menu
-				sideMenu.style.transform = 'translateX(-100%)';
-				overlay.style.display = 'none'; // Mostrar el overlay
-			  }
-			});
-			// -----------------------------------------------------------------
-
-            
-		  </script> -->
-    <script>
-        // Obtener referencias a los elementos del DOM
-        const menuCheckbox = document.querySelector('.menu-checkbox');
-        const sideMenu = document.querySelector('.side-menu');
-        const overlay = document.querySelector('.overlay');
-
-        // Agregar un event listener al cambio de estado del checkbox
-        menuCheckbox.addEventListener('change', function () {
-            if (this.checked) {
-                // Mostrar el side-menu
-                sideMenu.style.transform = 'translateX(0)';
-                overlay.style.display = 'block'; // Mostrar el overlay
-                document.body.style.overflow = 'hidden'; // Bloquear desplazamiento de la página
-            } else {
-                // Ocultar el side-menu
-                sideMenu.style.transform = 'translateX(-100%)';
-                overlay.style.display = 'none'; // Mostrar el overlay
-                document.body.style.overflow = 'auto'; // Restaurar desplazamiento de la página
-            }
-        });
 
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box">
+                <figure class="drop-shadow ">
 
+                    <img src="assets/icons/icon.ico" alt="Logo">
+                    <span>Gaigas grube</span>
 
-        // SUBMENU EN EL SIDE
-        // Obtener todos los elementos con la clase 'has-submenu'
-        const submenuItems = document.querySelectorAll('.has-submenu');
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="social-media">
+                    <a href="#" class="">
+                        <label class="btn btn-inv">
+                            <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                        </label>
+                    </a>
+                    <a href="#" class="">
+                        <label class="btn btn-inv">
+                            <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                        </label>
+                    </a>
+                    <a href="#" class="">
+                        <label class="btn btn-inv">
+                            <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                        </label>
+                    </a>
+                    <a href="#" class="">
+                        <label class="btn btn-inv">
+                            <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                        </label>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2023 <b>EFPC</b> - All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="js/script.js" async defer></script>
 
-        // Agregar un event listener a cada elemento
-        submenuItems.forEach(item => {
-            // Obtener el submenu asociado a cada elemento
-            const submenu = item.querySelector('.submenu');
-
-            // Agregar un event listener al clic
-            item.addEventListener('click', () => {
-                // Toggle de la clase 'submenu-visible' para mostrar u ocultar el submenu
-                submenu.classList.toggle('submenu-visible');
-            });
-
-            // Agregar un event listener a las opciones del submenu
-            const submenuOptions = submenu.querySelectorAll('li');
-            submenuOptions.forEach(option => {
-                option.addEventListener('click', () => {
-                    // Remover la clase 'active' de todas las opciones del submenu
-                    submenuOptions.forEach(opt => opt.classList.remove('active'));
-                    // Agregar la clase 'active' a la opción seleccionada
-                    option.classList.add('active');
-                });
-            });
-        });
-
-// ESTO ES PARA EL SUBMENU PERO MAS PRO
-// // Obtener todos los elementos con la clase 'has-submenu'
-// const submenuItems = document.querySelectorAll('.has-submenu');
-
-// // Agregar un event listener a cada elemento
-// submenuItems.forEach(item => {
-//   // Obtener el submenu asociado a cada elemento
-//   const submenu = item.querySelector('.submenu');
-
-//   // Agregar un event listener al clic en el elemento principal
-//   item.addEventListener('click', () => {
-//     // Toggle de la clase 'submenu-visible' para mostrar u ocultar el submenu
-//     submenu.classList.toggle('submenu-visible');
-//   });
-
-//   // Obtener todas las opciones del submenu
-//   const submenuOptions = submenu.querySelectorAll('li');
-//   submenuOptions.forEach(option => {
-//     option.addEventListener('click', (event) => {
-//       // Evitar que el evento de clic se propague al elemento principal
-//       event.stopPropagation();
-//       // Remover la clase 'active' de todas las opciones del submenu
-//       submenuOptions.forEach(opt => opt.classList.remove('active'));
-//       // Agregar la clase 'active' a la opción seleccionada
-//       option.classList.add('active');
-//     });
-//   });
-// });
-
-// // Agregar un event listener para cerrar el submenu al hacer clic en cualquier parte del documento
-// document.addEventListener('click', (event) => {
-//   // Verificar si el clic se realizó fuera de los submenus
-//   const isOutsideSubmenu = !event.target.closest('.has-submenu');
-//   if (isOutsideSubmenu) {
-//     // Ocultar todos los submenus
-//     submenuItems.forEach(item => {
-//       const submenu = item.querySelector('.submenu');
-//       submenu.classList.remove('submenu-visible');
-//     });
-//   }
-// });
-
-
-    </script>
-    <script src="" async defer></script>
 </body>
 
 </html>
