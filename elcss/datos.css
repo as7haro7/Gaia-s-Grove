@@ -1,0 +1,123 @@
+b{
+    margin:14px;
+    display:block;
+}
+
+#a{
+    padding:20px;
+    margin:50px;
+    background: rgb(141, 57, 57);
+    text-decoration: none;
+    color:whitesmoke;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px;
+    
+} 
+
+.titulo_planta{
+    color:#79c666;
+    font-size: 50px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    background:#1e630dd0;
+}
+.foto_planta{
+    margin:50px;
+    /* border: 4px solid #79c666; */
+}
+#foto_planta{
+    width: 420px;
+    height: 420px;
+}
+.datos_planta{
+    margin:50px;
+    /* border: 4px solid yellow; */
+}
+
+.respuesta{
+    display:block;
+    font-size: 28PX;
+    color:#2f5326;
+}
+
+.parte_dinamica{
+    display:flex;
+}
+
+.comprar{
+    display: block;
+    background-color: #79c666;
+    border-radius: 15px;
+    box-shadow: 5px;
+    margin: 25px;
+    /* border: 2px solid ; */
+    padding: 20px;
+    color:green;
+    font-size: 20px;
+    font-family: Verdana;
+    cursor: pointer
+}
+.titulo_datos_planta{
+    color:#A62B1F;
+    font-family: sans-serif ;
+    font-size:43px;
+    display: inline;
+
+}
+
+.inicio{
+    display: flex;
+    background-color: #267a1199;
+}
+
+.contenido{
+    margin: 20px 100px 20px 100px;
+    background:#a62a1f42;
+    padding: 30px;
+    /* border: 4px solid yellow; */
+}
+
+.recomendacion{
+    float: left;
+    margin: 25px;
+    /* border: 4px solid yellow; */
+    max-width: 14%;
+}
+
+#galeria_planta{
+    padding: 30px;
+    /* border: 4px solid green; */
+}
+
+.titulo_galeria{
+    text-align: center;
+    color:#429e42;
+    font-family: sans-serif ;
+    font-size:35px;
+    display: block;
+}
+
+.fondo_galeria{
+    background: #2f5326;
+}
+
+#galeria_planta img{
+    width: 49%;
+    height: 49%;
+}
+
+.coment_producto{
+    display: block;
+}
+
+.lista_prop{
+    list-style: circle;
+}
+
+.categorias{
+    background-color: green;
+}

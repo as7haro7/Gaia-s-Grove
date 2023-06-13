@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GIRASOL</title>
+        <script src="eljava/primero.js"></script>
+        <link rel="shortcut icon" href="assets/icons/icon.ico">
+        <link rel="stylesheet" type="text/css" href="elcss/datos.css">
+        <link rel="stylesheet" href="elcss/style.css">
+
+    </head>
+    <body>
+    <nav class="header">
+        <div class="header-content">
+            <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+            <label class="btn-menu" for="menu">
+                <img src="assets/icons/Rounded/Navigation/menu.svg" alt="menu" />
+            </label>
+
+            <div class="logo drop-shadow">
+                <!-- <span>Logo</span> -->
+                <img src="assets/icons/icon.ico" alt="icono" width="35px" height="35px">
+                <h1>Gaia's Grove</h1>
+            </div>
+            <ul class="main-menu">
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Inicio</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Nosotros</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-inv">
+                        <label for="icon-opcion" class="">
+                            <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" />
+                        </label>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn">
+                        <label for="icon-opcion" class="">
+                            <!-- <img src="assets/icons/Rounded/Social/sentiment_very_satisfied.svg" alt="icon" /> -->
+                        </label>
+                        Iniciar sesión
+                    </a>
+                </li>
+                <li>
+                    <input type="checkbox" id="div-search" name="div-search" class="menu-search">
+                    <label class="btn-search-togle" for="div-search">
+                        <img src="assets/icons/Rounded/Action/search.svg" alt="buscar">
+                    </label>
+                </li>
+            </ul>
+
+        </div>
+        <div class="overlay"></div>
+        <div class="search"></div>
+        <!-- ---------------- -->
+
+        <!-- <input type="checkbox" id="btn-menu"> -->
+        <div class="side-menu glass-effect">
+            <label class="btn-menu" for="menu">
+                <img src="assets/icons/Rounded/Navigation/close.svg" alt="cerrar" />
+            </label>
+            <div class="side-menu-content">
+                <ul>
+                    <li><a href="#" class="active">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+
+                    <li class="has-submenu">
+                        <a href="#">Opción 2</a>
+                        <ul class="submenu">
+                            <li><a href="#">Subopción 1</a></li>
+                            <li><a href="#">Subopción 2</a></li>
+                            <li><a href="#">Subopción 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                    <li><a href="#">Opcion</a></li>
+                </ul>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+
+        <div class="side-search">
+            <div class="header-search">
+
+                <label class="btn-back" for="div-search">
+                    <img src="assets/icons/Rounded/Navigation/arrow_back.svg" alt="cerrar" />
+                </label>
+
+                <input type="text" class="input-search" id="search-input" oninput="toggleClearButton()" />
+                <button class="btn-clear" id="clear-button" onclick="clearSearch()">
+                    <img src="assets/icons/Rounded/Navigation/close.svg" width="11px" height="11px" alt="clear-btn">
+                </button>
+
+                <label class="btn-search" for="menu">
+                    <img src="assets/icons/Rounded/Action/search.svg" alt="cerrar" />
+                </label>
+            </div>
+            <div class="side-search-content">
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div class="">
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div class="">
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+                <div class="card-search">
+                    <label for="icon-opcion" class="">
+                        <img src="assets/icons/Rounded/Social/sentiment_dissatisfied.svg" alt="icon" />
+                    </label>
+                    <div>
+                        <p class="tite-card-search">Lorem ipsum </p>
+                        <span class="desc-card-search">Lorem ipsum dolor sit amet consectetur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+        <h1 class="titulo_planta">EL GIRASOL</h1>
+        <div class="inicio">
+            <div class="foto_planta"
+                ><img src="assets/image/girasol1.png" id="foto_planta" alt="foto">
+            </div>
+            <div class="datos_planta">
+                <b class="titulo_datos_planta" >ESTADO :</b>
+                    <b class="respuesta">DISPONIBLE</b>
+                <b class="titulo_datos_planta" >CANTIDAD :</b>
+                    <b class="respuesta">UN RAMO DE ALREDEDOR DE 30 FLORES</b>
+                <b class="titulo_datos_planta" >PRECIO :</b>
+                    <b class="respuesta">Bs. 28</b>
+                <div class="parte_dinamica">
+                    <b>¿CON MACETA INCLUIDA?  <input type="checkbox"></b>
+                    <center><button class="comprar">COMPRAR PLANTA</button></center>
+                </div>
+            </div>        
+        </div>
+        <div class="inicio">
+            <div class="recomendacion">
+                <b>RECOMENDACIONES</b><br>
+                <a href="rosas_rojas.html" >rosas rojas</a>
+                <a href="manzanilla.html" >manzanilla</a>
+                <a href="glicina.html" >glicina.html</a>
+                <a href="wira_wira.html" >wira_wira.html</a>
+            </div>
+            <div class="contenido">
+                <b class="titulo_datos_planta">DESCRIPCION :</b>
+                <b>
+                    El girasol recibe este nombre gracias a las propiedades que posee esta planta cuando es joven y que le permiten girar en dirección de los rayos del Sol
+                     (heliotropismo), y de esta manera aprovechar de sus virtudes.<br>
+
+                        <br>Características del girasol
+
+<br>- Es una planta herbácea.<br>
+- Crece anualmente.<br>
+- Es una planta que puede llegar a medir hasta tres metros de altura.<br>
+- Tiene un tallo robusto, erguido, con pelos y hojas ovaladas de gran tamaño. El tallo no se ramifica.<br>
+- Es una planta que tiene una respuesta a la luz solar de nombre heliotropismo. Por ello tiene la capacidad de moverse en dirección a los rayo del Sol.<br>
+- La flor del girasol puede medir entre 5 y 40 centímetros de ancho.<br>
+- Es una planta que crece a diario si cuenta con las condiciones necesarias.<br>
+- Tiene diversas propiedades alimenticias de las cuales se puede obtener aceite de girasol y harinas ricas proteínicas.    
+
+                </b><br>
+                <center><a id='a' href="categorias.html">IR A CATEGORIA DE PLANTAS</a></center>            
+            </div>
+        </div>
+        <div class="fondo_galeria">
+            <b class="titulo_galeria">GALERIA DE FOTOS</b>
+            <div id="galeria_planta">
+                <img src="assets/image/girasol2.png" alt="imagen1"
+                ><img src="assets/image/girasol3.png" alt="imagen2"
+                ><img src="assets/image/girasol4.png" alt="imagen3"
+                ><img src="assets/image/girasol5.png" alt="imagen3">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="group-1">
+                <div class="box">
+                    <figure class="drop-shadow ">
+    
+                        <img src="assets/icons/icon.ico" alt="Logo">
+                        <span>Gaigas grube</span>
+    
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                </div>
+                <div class="box">
+                    <h2>Siguenos</h2>
+                    <div class="social-media">
+                        <a href="#" class="">
+                            <label class="btn btn-inv">
+                                <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                            </label>
+                        </a>
+                        <a href="#" class="">
+                            <label class="btn btn-inv">
+                                <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                            </label>
+                        </a>
+                        <a href="#" class="">
+                            <label class="btn btn-inv">
+                                <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                            </label>
+                        </a>
+                        <a href="#" class="">
+                            <label class="btn btn-inv">
+                                <img src="assets/icons/Rounded/Communication/forum.svg" alt="icon" />
+                            </label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="group-2">
+                <small>&copy; 2023 <b>EFPC</b> - Reservados todos los derechos.</small>
+            </div>
+        </footer>
+        <script src="eljava/script.js" async defer></script>
+    </body>
+
+</html>
+
